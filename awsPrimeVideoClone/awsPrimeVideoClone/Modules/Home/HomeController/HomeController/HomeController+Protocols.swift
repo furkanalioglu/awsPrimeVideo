@@ -17,7 +17,7 @@ extension HomeController : HomeViewInterface {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(viewModel.cellNib, forCellReuseIdentifier: viewModel.cellNibName)
-        tableView.register(viewModel.headerNib, forCellReuseIdentifier: viewModel.headerNibName)
+        tableView.register(viewModel.headerNib, forHeaderFooterViewReuseIdentifier: viewModel.headerNibName)
     }
     
     func prepareNavigationView() {

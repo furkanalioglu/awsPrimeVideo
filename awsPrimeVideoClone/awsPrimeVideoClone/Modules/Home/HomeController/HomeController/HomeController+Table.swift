@@ -24,4 +24,14 @@ extension HomeController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return viewModel.calculateHeight(indexPath: indexPath)
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: viewModel.headerNibName) as? HomeHeader else { fatalError("Could not load header") }
+        header.viewModel.latestMovies = (viewModel.movies?[.topMovies])!
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 200
+    }
 }

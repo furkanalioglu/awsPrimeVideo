@@ -18,7 +18,8 @@ class HeaderCollectionCell: UICollectionViewCell {
     
     func configure(movie : MovieResults?) {
         guard let movie = movie else { return }
-        imageView.downloaded(from: movie.posterURL)
+        imageView.downloaded(from: movie.backdropURL)
+        imageView.contentMode = .scaleAspectFill
     }
 
 }

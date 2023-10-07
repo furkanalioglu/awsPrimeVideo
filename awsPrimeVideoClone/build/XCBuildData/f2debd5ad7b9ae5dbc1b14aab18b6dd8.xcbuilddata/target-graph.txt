@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'awsPrimeVideoClone' in project 'awsPrimeVideoClone' (no dependencies)

@@ -16,12 +16,12 @@ final
 class SplashViewModel {
     weak var view : SplashControllerInterface?
     
-    lazy var movies = [MovieResults]()
+    lazy var movies = [MovieCategory:[MovieResults]]()
     
     func fetchMovies() async {
         do {
-            let fetchedMovies = try await NetworkManager.shared.fetchMovieList()
-            movies = fetchedMovies
+            let allMovies = try await NetworkManager.shared.fetchAllMovies()
+            movies = allMovies
             view?.updateMoviesList()
         } catch {
             print("Error fetching movies: \(error)")
@@ -36,6 +36,5 @@ extension SplashViewModel : SplashViewModelInterface {
         view?.startActivityIndicator()
         await fetchMovies()
     }
-
 }
 

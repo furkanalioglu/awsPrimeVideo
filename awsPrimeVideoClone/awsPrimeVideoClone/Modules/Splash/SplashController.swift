@@ -41,7 +41,7 @@ extension SplashController : SplashControllerInterface{
     }
     
     func updateMoviesList() {
-        RootManager.switchRoot(.tabBar)
+        RootManager.switchRoot(.tabBar,sender: viewModel.movies)
     }
     
     func handleError(error: Error) {

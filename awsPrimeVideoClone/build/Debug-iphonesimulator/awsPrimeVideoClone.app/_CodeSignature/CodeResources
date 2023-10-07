@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		+P2HL8Ays48tTYZg50R+/HwEPyc=
+		XpfA/HAb4xKn8cRwsIMlazoGLlI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -56,9 +56,13 @@
 		<data>
 		qPe05ohPLjCkJ4HRKWfhVF4T4DQ=
 		</data>
+		<key>HeaderCollectionCell.nib</key>
+		<data>
+		KI054HBjIiQVqf2CYsUk6ppNMw0=
+		</data>
 		<key>Home.storyboardc/HomeController.nib</key>
 		<data>
-		jFRstXKVmU4JPb3FZjaxWGdAfFI=
+		or6EG5/hBvEEUjoYWu15vVqTQTs=
 		</data>
 		<key>Home.storyboardc/Info.plist</key>
 		<data>
@@ -66,7 +70,19 @@
 		</data>
 		<key>Home.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		qPe05ohPLjCkJ4HRKWfhVF4T4DQ=
+		1WSpecAJa2LsmpM6aJ12rIjfzB8=
+		</data>
+		<key>HomeCell.nib</key>
+		<data>
+		UEUnTSnIgBfzYv3ESTPbtzrsEqA=
+		</data>
+		<key>HomeCollectionCell.nib</key>
+		<data>
+		ytoUJS65c3U53RREorQ1PclbS+8=
+		</data>
+		<key>HomeHeader.nib</key>
+		<data>
+		KNeGIcAyfQEUIHn2A3avrBJTEXk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -99,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tzjo5Sc+WDFpAvh4OTyfRvzKILJVz7Jxd8MjIlSyB0o=
+			DSfoMCvCzZQXD+O7OV1mvopIoML4pgpTfQDHwfMqBZ8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -186,11 +202,18 @@
 			eY2xUL0E7RtfU3K2iDgDvZPqP4IO0GDiuyhJho31nbA=
 			</data>
 		</dict>
+		<key>HeaderCollectionCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oiykHn3SykyO3GDSB1MVaGY+IU4fSDWlbXkOcE4mR88=
+			</data>
+		</dict>
 		<key>Home.storyboardc/HomeController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HmrrkMRxjsyxRA4EDUmFU19nfFnHAcIOBZoqdhj45WY=
+			jywdBULsyPuooM9qUVxG0Rn2vtTbF3sKRQJvav/bsEQ=
 			</data>
 		</dict>
 		<key>Home.storyboardc/Info.plist</key>
@@ -204,7 +227,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eY2xUL0E7RtfU3K2iDgDvZPqP4IO0GDiuyhJho31nbA=
+			pvbJJH/wt2B5hdx2g3+rwlJvK+6nHKZ7+TDKKRSpnXk=
+			</data>
+		</dict>
+		<key>HomeCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6A1Tw6zjuAI1pCxU+xOONywNneMYrtkA78lkDT0EP/g=
+			</data>
+		</dict>
+		<key>HomeCollectionCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VZEFB1PdH30aixOOEuzW42EgtCfvgk/W/vrHiLqpKeI=
+			</data>
+		</dict>
+		<key>HomeHeader.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EKiOtNG4RRWU5YwEMQKwHhcOWZidNINcBgsiBVf2I6Y=
 			</data>
 		</dict>
 		<key>MainTab.storyboardc/DownloadsController.nib</key>

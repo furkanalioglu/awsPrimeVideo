@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="152" id="KGk-i7-Jjw" customClass="HomeCell" customModule="awsPrimeVideoClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQO-21-IOb">
+                        <rect key="frame" x="40" y="5" width="383" height="20.333333333333332"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="W4q-Ie-QKW">
+                        <rect key="frame" x="0.0" y="30.333333333333336" width="423" height="121.66666666666666"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ga0-fT-xRz">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W4q-Ie-QKW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jhi-74-pyA"/>
+                    <constraint firstItem="HQO-21-IOb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="SRs-YD-q2O"/>
+                    <constraint firstAttribute="bottom" secondItem="W4q-Ie-QKW" secondAttribute="bottom" id="Uaj-B6-PdY"/>
+                    <constraint firstAttribute="trailing" secondItem="W4q-Ie-QKW" secondAttribute="trailing" id="bUM-NH-m6f"/>
+                    <constraint firstItem="W4q-Ie-QKW" firstAttribute="top" secondItem="HQO-21-IOb" secondAttribute="bottom" constant="5" id="med-k4-sm3"/>
+                    <constraint firstAttribute="trailing" secondItem="HQO-21-IOb" secondAttribute="trailing" id="xdk-8g-ebC"/>
+                    <constraint firstItem="HQO-21-IOb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="zr1-K4-0ga"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="W4q-Ie-QKW" id="aRA-qS-u3q"/>
+                <outlet property="titleLabel" destination="HQO-21-IOb" id="c6S-3j-dzA"/>
+            </connections>
+            <point key="canvasLocation" x="95.419847328244273" y="58.450704225352112"/>
+        </tableViewCell>
+    </objects>
+</document>

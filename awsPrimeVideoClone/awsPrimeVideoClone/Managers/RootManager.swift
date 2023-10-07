@@ -42,10 +42,10 @@ enum PageType {
         case .tabBar:
             let tabBarVC = UIStoryboard(name: "MainTab", bundle: nil).instantiateViewController(withIdentifier: "MainTabController") as! UITabBarController
             if let navController = tabBarVC.viewControllers?.first as? UINavigationController,
-               let homeController = navController.viewControllers.first as? HomeController{ }
-//                           let messages = sender as? [MessagesCellItem] {
-//                            messagesController.viewModel.messages = messages
-//            { }
+               let homeController = navController.viewControllers.first as? HomeController,
+               let movies = sender as? [MovieCategory:[MovieResults]]{
+                homeController.viewModel.movies = movies
+            }
             return tabBarVC
         }
     }

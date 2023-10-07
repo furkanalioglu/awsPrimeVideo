@@ -7,13 +7,47 @@
 
 import UIKit
 
-class SplashController: UIViewController {
+protocol SplashControllerInterface : AnyObject {
+    func startActivityIndicator()
+    func navigateToNext()
+    func updateMoviesList()
+    func handleError(error: Error )
+}
 
+class SplashController: UIViewController {
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    private lazy var viewModel = SplashViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel.view = self
+        Task {
+            await viewModel.viewDidLoad()
+        }
     }
-
-
+    
 }
+
+extension SplashController : SplashControllerInterface{
+    func startActivityIndicator() {
+        DispatchQueue.main.async { [weak self] in
+            self?.activityIndicator.startAnimating()
+        }
+    }
+    
+    func navigateToNext() {
+        RootManager.switchRoot(.tabBar)
+    }
+    
+    func updateMoviesList() {
+        RootManager.switchRoot(.tabBar)
+    }
+    
+    func handleError(error: Error) {
+        print(error.localizedDescription)
+    }
+}
+
+
 

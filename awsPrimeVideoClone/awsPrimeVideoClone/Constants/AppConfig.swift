@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class AppConfig {
+    
+    private init() {}
+    
+    static let instance = AppConfig()    
+}

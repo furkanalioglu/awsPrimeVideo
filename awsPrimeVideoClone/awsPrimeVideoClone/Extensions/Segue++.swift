@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+protocol SeguePerformable {
+    func performSegue(identifier: String)
+}
+
+extension SeguePerformable where Self: UIViewController{
+    
+}

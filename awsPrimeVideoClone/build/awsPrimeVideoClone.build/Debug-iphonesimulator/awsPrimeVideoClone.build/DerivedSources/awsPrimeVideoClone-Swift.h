@@ -388,6 +388,11 @@ SWIFT_CLASS("_TtC18awsPrimeVideoClone14HomeController")
 
 
 
+@class UIStoryboardSegue;
+
+@interface HomeController (SWIFT_EXTENSION(awsPrimeVideoClone))
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+@end
 
 @class UIView;
 
@@ -425,18 +430,32 @@ SWIFT_CLASS("_TtC18awsPrimeVideoClone21HomeDetailsController")
 
 
 
+
 @interface HomeDetailsController (SWIFT_EXTENSION(awsPrimeVideoClone)) <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC18awsPrimeVideoClone17HomeDetailsHeader")
+@interface HomeDetailsHeader : UITableViewHeaderFooterView
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified homeDetailsHeader;
++ (void)awakeFromNib;
+- (nonnull instancetype)initWithReuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC18awsPrimeVideoClone20HomeDetailsLabelCell")
 @interface HomeDetailsLabelCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified type;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified ratingLabel;
 - (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

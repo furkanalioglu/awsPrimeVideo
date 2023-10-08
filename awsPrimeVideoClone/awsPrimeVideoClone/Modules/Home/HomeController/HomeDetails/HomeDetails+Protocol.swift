@@ -21,3 +21,17 @@ extension HomeDetailsController : HomeDetailsInterface {
         tableView.register(viewModel.headerCellNib, forHeaderFooterViewReuseIdentifier: viewModel.headerCellNibName)
     }
 }
+
+extension HomeDetailsController : HomeDetailsButtonCellProtocol {
+    func handlePlayTapped() {
+        print("Show youtube here")
+    }
+    
+    func handleDownloadTapped() {
+        print("Download video here")
+    }
+    
+    func handleShareTapped() {
+        print("Show share sheet hre")
+    }
+}

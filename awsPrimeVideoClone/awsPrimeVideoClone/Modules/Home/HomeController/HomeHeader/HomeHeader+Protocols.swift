@@ -42,6 +42,14 @@ extension HomeController: HomeHeaderProtocol, SeguePerformable {
     func prepareForSegue(movie: MovieResults) {
         performSegue(identifier: .toHomeDetails,sender: movie)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SegueIdentifier.toHomeDetails.rawValue,
+           let destinationVC = segue.destination as? HomeDetailsController,
+           let movie = sender as? MovieResults {
+            destinationVC.viewModel.movie = movie
+        }
+    }
 }
 
 

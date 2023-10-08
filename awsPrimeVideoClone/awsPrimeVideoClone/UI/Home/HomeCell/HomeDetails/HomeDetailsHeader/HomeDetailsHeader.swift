@@ -8,13 +8,15 @@
 import UIKit
 
 class HomeDetailsHeader: UITableViewHeaderFooterView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var homeDetailsHeader: UIImageView!
+    
+    override class func awakeFromNib() {
     }
-    */
+    
+    func configure(posterPath: URL?) {
+        guard let posterPath = posterPath else { return }
+        homeDetailsHeader.downloaded(from: posterPath)
+        homeDetailsHeader.contentMode = .scaleAspectFill
+    }
 
 }

@@ -30,5 +30,6 @@ extension HomeController : HomeColletionCellProtocol {
     func prepareForSegueFromCell(movie: MovieResults) {
         performSegue(identifier: .toHomeDetails, sender: movie)
     }
+    
 }
 

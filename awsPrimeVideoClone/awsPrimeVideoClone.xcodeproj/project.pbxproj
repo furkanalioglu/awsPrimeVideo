@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		91994A562AD2DE2E00DE4533 /* HomeHeaderViewModel+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91994A552AD2DE2E00DE4533 /* HomeHeaderViewModel+Protocols.swift */; };
 		91994A582AD2DE9E00DE4533 /* HomeDetailsViewModel+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91994A572AD2DE9E00DE4533 /* HomeDetailsViewModel+Protocol.swift */; };
+		91994A5B2AD327A700DE4533 /* HomeDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91994A5A2AD327A700DE4533 /* HomeDetailsHeader.swift */; };
+		91994A5D2AD327AF00DE4533 /* HomeDetailsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91994A5C2AD327AF00DE4533 /* HomeDetailsHeader.xib */; };
 		91C9EAE22AD19BDC00EF6C54 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C9EAE12AD19BDC00EF6C54 /* API.swift */; };
 		91C9EAE42AD19D8400EF6C54 /* MoviesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C9EAE32AD19D8400EF6C54 /* MoviesAPI.swift */; };
 		91C9EAE72AD1A19D00EF6C54 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C9EAE62AD1A19D00EF6C54 /* Movie.swift */; };
@@ -68,6 +70,8 @@
 /* Begin PBXFileReference section */
 		91994A552AD2DE2E00DE4533 /* HomeHeaderViewModel+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeHeaderViewModel+Protocols.swift"; sourceTree = "<group>"; };
 		91994A572AD2DE9E00DE4533 /* HomeDetailsViewModel+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDetailsViewModel+Protocol.swift"; sourceTree = "<group>"; };
+		91994A5A2AD327A700DE4533 /* HomeDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailsHeader.swift; sourceTree = "<group>"; };
+		91994A5C2AD327AF00DE4533 /* HomeDetailsHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailsHeader.xib; sourceTree = "<group>"; };
 		91C9EAE12AD19BDC00EF6C54 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		91C9EAE32AD19D8400EF6C54 /* MoviesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAPI.swift; sourceTree = "<group>"; };
 		91C9EAE62AD1A19D00EF6C54 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91994A592AD3278600DE4533 /* HomeDetailsHeader */ = {
+			isa = PBXGroup;
+			children = (
+				91994A5A2AD327A700DE4533 /* HomeDetailsHeader.swift */,
+				91994A5C2AD327AF00DE4533 /* HomeDetailsHeader.xib */,
+			);
+			path = HomeDetailsHeader;
+			sourceTree = "<group>";
+		};
 		91C9EAE52AD1A18800EF6C54 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +280,7 @@
 			children = (
 				91C9EB322AD2B18900EF6C54 /* HomeDetails.storyboard */,
 				91C9EB382AD2B3D200EF6C54 /* HomeDetailsCell */,
+				91994A592AD3278600DE4533 /* HomeDetailsHeader */,
 			);
 			path = HomeDetails;
 			sourceTree = "<group>";
@@ -578,6 +592,7 @@
 				91EDA5A92AD177F800579F46 /* Home.storyboard in Resources */,
 				91FD96972ACE076B00B04B52 /* MainTab.storyboard in Resources */,
 				91C9EAF42AD1AEA600EF6C54 /* HomeCollectionCell.xib in Resources */,
+				91994A5D2AD327AF00DE4533 /* HomeDetailsHeader.xib in Resources */,
 				91FD966B2ACDF25900B04B52 /* Assets.xcassets in Resources */,
 				91C9EAEE2AD1AE1F00EF6C54 /* HomeCell.xib in Resources */,
 				91FD96692ACDF25800B04B52 /* Splash.storyboard in Resources */,
@@ -604,6 +619,7 @@
 				91FD96862ACDFFD100B04B52 /* NetworkManager.swift in Sources */,
 				91EDA5A02AD1776C00579F46 /* Root++.swift in Sources */,
 				91C9EB302AD2B05E00EF6C54 /* HomeDetailsViewModel.swift in Sources */,
+				91994A5B2AD327A700DE4533 /* HomeDetailsHeader.swift in Sources */,
 				91C9EAFF2AD1CEDA00EF6C54 /* HomeCollectionCellViewModel.swift in Sources */,
 				91C9EB252AD2068000EF6C54 /* HeaderCollectionCell.swift in Sources */,
 				91C9EB372AD2B32A00EF6C54 /* HomeDetails+Protocol.swift in Sources */,

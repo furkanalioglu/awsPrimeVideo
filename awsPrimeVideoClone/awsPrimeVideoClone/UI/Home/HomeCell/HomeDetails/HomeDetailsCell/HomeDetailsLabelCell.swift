@@ -8,16 +8,21 @@
 import UIKit
 
 class HomeDetailsLabelCell: UITableViewCell {
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var type: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+    var movie: MovieResults?
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configureCell() {
+        guard let movie = movie else { return }
+        descriptionLabel.text = movie.overview
+        type.text = movie.title
+        ratingLabel.text = "\(movie.voteAverage ?? 0.0)"
     }
     
 }

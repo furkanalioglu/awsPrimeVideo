@@ -100,9 +100,13 @@
 		<data>
 		JETLa5HPYcoTgSamZuJnOpfxpGY=
 		</data>
+		<key>HomeDetailsHeader.nib</key>
+		<data>
+		CkCMzAZyuYXhiIWMxhdhwApOmz0=
+		</data>
 		<key>HomeDetailsLabelCell.nib</key>
 		<data>
-		uldcFdlPnVbxrOuHz+ehNXs0p28=
+		/FkG+byXiMZaRUalukFEFNTQk5g=
 		</data>
 		<key>HomeHeader.nib</key>
 		<data>
@@ -303,11 +307,18 @@
 			aBKA9Q8pHD29Wid2ylsutCZs/oGjDdBzB+PRsOlhGKY=
 			</data>
 		</dict>
+		<key>HomeDetailsHeader.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OiIwFOOCZtS2Gcq8GIYJRcSw1tDY/DJjC01at70Yg2Q=
+			</data>
+		</dict>
 		<key>HomeDetailsLabelCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uMdtUw91sdxuAaAnWm0ku3Z4uZcrtwNP60JAKmAisvM=
+			e8HKMqQ7Fz/CPsq55ut5EIXJ358J0b9Mek0e1G1hPGc=
 			</data>
 		</dict>
 		<key>HomeHeader.nib</key>

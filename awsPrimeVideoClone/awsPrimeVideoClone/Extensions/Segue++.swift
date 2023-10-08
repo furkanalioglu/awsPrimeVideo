@@ -20,7 +20,7 @@ extension SeguePerformable where Self: UIViewController {
     func performSegue(identifier: SegueIdentifier, sender: Any? = nil) {
         switch identifier {
         case .toHomeDetails:
-            if let movie = sender as? MovieResults {
+            if let movie = sender as? MovieResults{
                 performSegue(withIdentifier: identifier.rawValue, sender: movie)
             }
         case .toDownloadedContent:

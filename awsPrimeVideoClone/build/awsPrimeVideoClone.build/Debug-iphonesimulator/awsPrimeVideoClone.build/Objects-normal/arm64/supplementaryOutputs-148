@@ -1,0 +1,30 @@
+"/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/awsPrimeVideoClone/Modules/Home/HomeController/HomeDetails/HomeDetailsController.swift":
+  dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeDetailsController.d"
+  object: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeDetailsController.o"
+  swift-dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeDetailsController.swiftdeps"
+  diagnostics: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeDetailsController.dia"
+  const-values: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeDetailsController.swiftconstvalues"
+"/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/awsPrimeVideoClone/Modules/Home/HomeController/HomeHeader/HomeHeader+Protocols.swift":
+  object: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeader+Protocols.o"
+  const-values: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeader+Protocols.swiftconstvalues"
+  dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeader+Protocols.d"
+  diagnostics: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeader+Protocols.dia"
+  swift-dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeader+Protocols.swiftdeps"
+"/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/awsPrimeVideoClone/UI/Home/HomeCell/HomeCollectionCell/HomeCollectionCell.swift":
+  swift-dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeCollectionCell.swiftdeps"
+  dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeCollectionCell.d"
+  const-values: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeCollectionCell.swiftconstvalues"
+  object: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeCollectionCell.o"
+  diagnostics: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeCollectionCell.dia"
+"/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/awsPrimeVideoClone/Modules/Home/HomeViewModel/HomeHeaderViewModel/HomeHeaderViewModel.swift":
+  dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeaderViewModel.d"
+  const-values: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeaderViewModel.swiftconstvalues"
+  diagnostics: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeaderViewModel.dia"
+  object: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeaderViewModel.o"
+  swift-dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeHeaderViewModel.swiftdeps"
+"/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/awsPrimeVideoClone/Modules/Home/HomeController/HomeController/HomeController.swift":
+  dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeController.d"
+  const-values: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeController.swiftconstvalues"
+  object: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeController.o"
+  diagnostics: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeController.dia"
+  swift-dependencies: "/Users/furkanalioglu/Desktop/awsPrimeVideo/awsPrimeVideoClone/build/awsPrimeVideoClone.build/Debug-iphonesimulator/awsPrimeVideoClone.build/Objects-normal/arm64/HomeController.swiftdeps"

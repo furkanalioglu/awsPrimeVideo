@@ -17,6 +17,8 @@ extension HomeController : UITableViewDelegate, UITableViewDataSource{
         guard let cellViewModel = viewModel.configureCell(for: indexPath) else { return UITableViewCell() }
         cell.viewModel = cellViewModel
         cell.titleLabel.text = viewModel.configureTitle(for: indexPath)
+        cell.viewModel.delegate = self
+        cell.backgroundColor = .clear
         return cell
     }
     
@@ -26,8 +28,14 @@ extension HomeController : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: viewModel.headerNibName) as? HomeHeader else { fatalError("Could not load header") }
-        header.viewModel.latestMovies = (viewModel.movies?[.topMovies])!
+        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: viewModel.headerNibName) as? HomeHeader else {
+            fatalError("Could not load header")
+        }
+        guard let movies = viewModel.movies?[.topMovies]else { return nil }
+        let latestMovies = Array(movies.prefix(5))
+        header.viewModel.latestMovies = latestMovies
+        header.pageControl.numberOfPages = latestMovies.count
+        header.viewModel.delegate = self
         return header
     }
     

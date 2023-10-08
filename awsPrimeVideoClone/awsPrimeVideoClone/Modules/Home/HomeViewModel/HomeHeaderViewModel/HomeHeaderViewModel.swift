@@ -7,45 +7,58 @@
 
 import UIKit
 
-protocol HomeHeaderViewModelInterface: AnyObject {
-    func viewDidLoad()
-    func didScroll(collectionView: UICollectionView)
-    func getCurrentPage(for collectionView: UICollectionView) -> Int
-    var numberOfItems: Int { get }
-}
-
 final
 class HomeHeaderViewModel {
     weak var view : HomeHeaderInterface?
+    weak var delegate: HomeHeaderProtocol?
     lazy var latestMovies = [MovieResults]()
-
+    
     lazy var cellNib = UINib(nibName: "HeaderCollectionCell", bundle: .main)
     lazy var cellNibName = "HeaderCollectionCell"
     
-    var numberOfItems: Int {
-        return latestMovies.count
+    lazy var segueIdentifier = "toHomeDetils"
+    
+    
+    private lazy var selectedIndex = 0
+    
+    var displayLink: CADisplayLink?
+    var startTime: CFTimeInterval?
+    let scrollInterval: CFTimeInterval = 2.0
+    
+    internal
+    func startAutoScroll() {
+        startTime = CACurrentMediaTime()
+        displayLink = CADisplayLink(target: self, selector: #selector(handleDisplayLink))
+        displayLink?.add(to: .main, forMode: .default)
+    }
+    
+    
+    @objc func handleDisplayLink(_ link: CADisplayLink) {
+        if let startTime = startTime, (link.timestamp - startTime) >= scrollInterval {
+            self.scrollCollectionViewToNextItem()
+            self.startTime = link.timestamp
+        }
+    }
+    
+    private 
+    func scrollCollectionViewToNextItem() {
+        guard let collectionView = view?.getCollectionView() else { return }
+        let currentPage = getCurrentPage(for: collectionView)
+        let nextPage = currentPage + 1
+        
+        if nextPage < latestMovies.count {
+            let nextIndexPath = IndexPath(item: nextPage, section: 0)
+            collectionView.scrollToItem(at: nextIndexPath, at: .centeredHorizontally, animated: true)
+        } else {
+            let firstIndexPath = IndexPath(item: 0, section: 0)
+            collectionView.scrollToItem(at: firstIndexPath, at: .centeredHorizontally, animated: false)
+        }
+    }
+    
+    func invalidateDisplayLink() {
+        displayLink?.invalidate()
+        displayLink = nil
     }
     
 }
 
-extension HomeHeaderViewModel : HomeHeaderViewModelInterface{
-    func viewDidLoad() {
-        view?.prepareCollectionView()
-    }
-    
-    func didScroll(collectionView: UICollectionView) {
-        let currentPage = getCurrentPage(for: collectionView)
-        view?.updateCurrentPage(currentPage)
-    }
-    
-    func getCurrentPage(for collectionView: UICollectionView) -> Int {
-        let visibleRect = CGRect(origin: collectionView.contentOffset, size: collectionView.bounds.size)
-        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
-        
-        if let visibleIndexPath = collectionView.indexPathForItem(at: visiblePoint) {
-            return visibleIndexPath.row
-        }
-        
-        return 0
-    }
-}

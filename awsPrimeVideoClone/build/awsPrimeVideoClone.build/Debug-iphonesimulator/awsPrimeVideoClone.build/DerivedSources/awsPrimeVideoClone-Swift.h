@@ -387,6 +387,8 @@ SWIFT_CLASS("_TtC18awsPrimeVideoClone14HomeController")
 @end
 
 
+
+
 @class UIView;
 
 @interface HomeController (SWIFT_EXTENSION(awsPrimeVideoClone)) <UITableViewDataSource, UITableViewDelegate>
@@ -397,6 +399,48 @@ SWIFT_CLASS("_TtC18awsPrimeVideoClone14HomeController")
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class UIButton;
+
+SWIFT_CLASS("_TtC18awsPrimeVideoClone21HomeDetailsButtonCell")
+@interface HomeDetailsButtonCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified playButtonOutlet;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified downloadButtonOutlet;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified shareButtonOutlet;
+- (void)awakeFromNib;
+- (IBAction)playButtonAction:(id _Nonnull)sender;
+- (IBAction)downloadButtonAction:(id _Nonnull)sender;
+- (IBAction)shareButtonAction:(id _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18awsPrimeVideoClone21HomeDetailsController")
+@interface HomeDetailsController : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@interface HomeDetailsController (SWIFT_EXTENSION(awsPrimeVideoClone)) <UITableViewDataSource, UITableViewDelegate>
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC18awsPrimeVideoClone20HomeDetailsLabelCell")
+@interface HomeDetailsLabelCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIPageControl;
 @class UIScrollView;
 
@@ -405,6 +449,7 @@ SWIFT_CLASS("_TtC18awsPrimeVideoClone10HomeHeader")
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 @property (nonatomic, weak) IBOutlet UIPageControl * _Null_unspecified pageControl;
 - (void)awakeFromNib;
+- (void)didMoveToSuperview;
 - (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
 - (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
 - (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
@@ -418,6 +463,7 @@ SWIFT_CLASS("_TtC18awsPrimeVideoClone10HomeHeader")
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 

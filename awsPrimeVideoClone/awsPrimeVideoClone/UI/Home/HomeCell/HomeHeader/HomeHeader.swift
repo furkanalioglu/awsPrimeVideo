@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol HomeHeaderInterface : AnyObject{
-    func prepareCollectionView()
-    func updateCurrentPage(_ page: Int)
-
-}
 
 class HomeHeader: UITableViewHeaderFooterView {
     
@@ -19,12 +14,15 @@ class HomeHeader: UITableViewHeaderFooterView {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
-    
 
     override func awakeFromNib() {
        super.awakeFromNib()
         viewModel.view = self
         viewModel.viewDidLoad()
+    }
+    
+    override func didMoveToSuperview() {
+        viewModel.viewDidDisappear()
     }
     
     func getCurrentPage() -> Int {
@@ -42,27 +40,4 @@ class HomeHeader: UITableViewHeaderFooterView {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         viewModel.didScroll(collectionView: collectionView)
     }
-    
 }
-
-extension HomeHeader: HomeHeaderInterface {
-    func prepareCollectionView(){
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.isPagingEnabled = true
-        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-             flowLayout.itemSize = CGSize(width: collectionView.bounds.width, height: 200)
-             flowLayout.scrollDirection = .horizontal
-             flowLayout.minimumLineSpacing = 0
-         }
-        collectionView.register(viewModel.cellNib, forCellWithReuseIdentifier: viewModel.cellNibName)
-        
-    }
-    
-    
-    func updateCurrentPage(_ page: Int) {
-        pageControl.currentPage = page
-    }
-}
-

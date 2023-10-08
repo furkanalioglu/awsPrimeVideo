@@ -35,5 +35,6 @@ extension HomeViewModel : HomeViewModelInterface {
         let category = MovieCategory.allCases[indexPath.row]
         return category.title
     }
-    
 }
+
+

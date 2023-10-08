@@ -7,12 +7,13 @@
 
 import UIKit
 
-protocol HomeViewInterface : AnyObject, SeguePerformable{
+protocol HomeViewInterface : AnyObject{
     func prepareTableView()
     func prepareNavigationView()
 }
 
-extension HomeController : HomeViewInterface {
+
+extension HomeController : HomeViewInterface{
     func prepareTableView() {
         tableView.dataSource = self
         tableView.delegate = self
@@ -24,3 +25,10 @@ extension HomeController : HomeViewInterface {
         navigationItem.title = "Home"
     }
 }
+
+extension HomeController : HomeColletionCellProtocol {
+    func prepareForSegueFromCell(movie: MovieResults) {
+        performSegue(identifier: .toHomeDetails, sender: movie)
+    }
+}
+

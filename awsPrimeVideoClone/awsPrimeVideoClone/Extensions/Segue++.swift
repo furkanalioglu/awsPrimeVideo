@@ -8,12 +8,23 @@
 import Foundation
 import UIKit
 
-protocol SeguePerformable {
-    func performSegue(identifier: String)
+enum SegueIdentifier: String {
+    case toHomeDetails, toDownloadedContent
 }
 
-extension SeguePerformable where Self: UIViewController{
-    func performSegue(identifier: String){
-        performSegue(withIdentifier: identifier, sender:self)
+protocol SeguePerformable {
+    func performSegue(identifier: SegueIdentifier, sender: Any?)
+}
+
+extension SeguePerformable where Self: UIViewController {
+    func performSegue(identifier: SegueIdentifier, sender: Any? = nil) {
+        switch identifier {
+        case .toHomeDetails:
+            if let movie = sender as? MovieResults {
+                performSegue(withIdentifier: identifier.rawValue, sender: movie)
+            }
+        case .toDownloadedContent:
+            performSegue(withIdentifier: identifier.rawValue, sender: sender)
+        }
     }
 }

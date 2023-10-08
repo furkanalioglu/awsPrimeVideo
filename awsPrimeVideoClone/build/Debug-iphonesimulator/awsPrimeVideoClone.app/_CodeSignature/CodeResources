@@ -62,15 +62,19 @@
 		</data>
 		<key>Home.storyboardc/HomeController.nib</key>
 		<data>
-		or6EG5/hBvEEUjoYWu15vVqTQTs=
+		hhjyexjbZ/m2TZI3gJPxkM5pJH0=
+		</data>
+		<key>Home.storyboardc/HomeDetailsController.nib</key>
+		<data>
+		Ws97QYIs6iWSJbM8giot7RiNnZ4=
 		</data>
 		<key>Home.storyboardc/Info.plist</key>
 		<data>
-		NJbcDrsRojrnaa9hnidMQ5ldziw=
+		QKiJztrB74bxlJBjYqTj9SMUrXM=
 		</data>
 		<key>Home.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		jOXeKVznGGfjBCuNHup1aGVsgfE=
+		Ok97tuCoT5Qk3QaOjIGVir31D/0=
 		</data>
 		<key>HomeCell.nib</key>
 		<data>
@@ -79,6 +83,26 @@
 		<key>HomeCollectionCell.nib</key>
 		<data>
 		ytoUJS65c3U53RREorQ1PclbS+8=
+		</data>
+		<key>HomeDetails.storyboardc/HomeDetailsController.nib</key>
+		<data>
+		iiHqvl64BuQCLeVTMFqf5f+yAas=
+		</data>
+		<key>HomeDetails.storyboardc/Info.plist</key>
+		<data>
+		A40K5feMDUyt8qB/fZs37GtAdsk=
+		</data>
+		<key>HomeDetails.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<data>
+		QlHIHlFpRAu8lpwEPRo21WV5J1c=
+		</data>
+		<key>HomeDetailsButtonCell.nib</key>
+		<data>
+		JETLa5HPYcoTgSamZuJnOpfxpGY=
+		</data>
+		<key>HomeDetailsLabelCell.nib</key>
+		<data>
+		uldcFdlPnVbxrOuHz+ehNXs0p28=
 		</data>
 		<key>HomeHeader.nib</key>
 		<data>
@@ -213,21 +237,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jywdBULsyPuooM9qUVxG0Rn2vtTbF3sKRQJvav/bsEQ=
+			4UvVsOFkqC1thKDUfaaj4apMcjQh6cAgFCAIF9ofhaM=
+			</data>
+		</dict>
+		<key>Home.storyboardc/HomeDetailsController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jdh+yzhp+oM0nfdM4dCwJRLVvs4GmVNyWq6+xnP/2f0=
 			</data>
 		</dict>
 		<key>Home.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JHupLeTfs9t0bMN3Oq3VXT+alEDtTnA7Egw81MsmvHA=
+			4EPHsZu/LO90eJ+m7XgdVNmT8W+5Xbr6uPcSoohhygE=
 			</data>
 		</dict>
 		<key>Home.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vz72xTZVOr6K8BOOdcd2wL/LsEXwVvJl67fJLafisKI=
+			Rw0LGbPmi2fbnne5BdBCzURCUvxZYcmrtfZXnjt/vdc=
 			</data>
 		</dict>
 		<key>HomeCell.nib</key>
@@ -242,6 +273,41 @@
 			<key>hash2</key>
 			<data>
 			VZEFB1PdH30aixOOEuzW42EgtCfvgk/W/vrHiLqpKeI=
+			</data>
+		</dict>
+		<key>HomeDetails.storyboardc/HomeDetailsController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p2kNH89lpO151sNqlBBrYYhKf0i7m0OBHW3MlhGBzKI=
+			</data>
+		</dict>
+		<key>HomeDetails.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gimar4rjoSrcun31ywzAJgHsBKb03/qqfbutIbzm3A4=
+			</data>
+		</dict>
+		<key>HomeDetails.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hwWACX964Jqdoj5l0z2F3hS20fLl3fTp7oKT62OYry0=
+			</data>
+		</dict>
+		<key>HomeDetailsButtonCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aBKA9Q8pHD29Wid2ylsutCZs/oGjDdBzB+PRsOlhGKY=
+			</data>
+		</dict>
+		<key>HomeDetailsLabelCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uMdtUw91sdxuAaAnWm0ku3Z4uZcrtwNP60JAKmAisvM=
 			</data>
 		</dict>
 		<key>HomeHeader.nib</key>

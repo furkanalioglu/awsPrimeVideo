@@ -14,6 +14,7 @@ class HomeCollectionCellViewModel {
     lazy var nib = UINib(nibName: "HomeCollectionCell", bundle: .main)
     lazy var nibName =  "HomeCollectionCell"
     weak var view: HomeCollectionCellInterface?
+    weak var delegate: HomeColletionCellProtocol?
 
     func setup(with movies: [MovieResults], tableViewIndex: Int) {
         self.movies = movies

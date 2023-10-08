@@ -24,7 +24,8 @@ extension HomeDetailsController : HomeDetailsInterface {
 
 extension HomeDetailsController : HomeDetailsButtonCellProtocol {
     func handlePlayTapped() {
-        print("Show youtube here")
+        print(viewModel.youtubeId )
+        YoutubeManager.shared.presentVideo(on: self, videoId: viewModel.youtubeId ?? "")
     }
     
     func handleDownloadTapped() {

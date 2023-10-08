@@ -9,8 +9,10 @@ import Foundation
 
 enum API {
     static let baseURL = URL(string: "https://api.themoviedb.org/3")!
+    static let youtubeApiBaseURL = URL(string:"https://www.googleapis.com/youtube/v3/search")
     
     static let apiKey = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOGRhNDM1NGIzODA4NTc3N2Y3OWMxMjAzYjFkMDRlMiIsInN1YiI6IjY0OGFmNGVhNDJiZjAxMDBhZTJmY2RjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.cjZE8TIsTdmixZ_-obV3W4yGxpdXIgR-fK8kGgEHf9A"
+    static let youtubeApiKey = "AIzaSyD0lEbKt5p6VH9-tkGL5swynqgy591goWI"
 
     static var headers: [String: String] {
         return [
@@ -27,7 +29,6 @@ extension NetworkManager {
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = API.headers
         print("REQ is \(request)")
-        
         let (data, response) = try await URLSession.shared.data(for: request)
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw try JSONDecoder().decode(APIError.self, from: data)

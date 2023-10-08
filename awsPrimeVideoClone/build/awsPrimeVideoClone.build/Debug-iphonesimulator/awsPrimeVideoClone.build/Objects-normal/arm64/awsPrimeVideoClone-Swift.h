@@ -402,6 +402,13 @@ SWIFT_CLASS("_TtC18awsPrimeVideoClone14HomeController")
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_CLASS("_TtC18awsPrimeVideoClone25HomeDetailVideoController")
+@interface HomeDetailVideoController : UIViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 
 SWIFT_CLASS("_TtC18awsPrimeVideoClone21HomeDetailsButtonCell")

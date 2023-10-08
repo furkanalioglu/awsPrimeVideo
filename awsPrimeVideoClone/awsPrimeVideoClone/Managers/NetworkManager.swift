@@ -13,17 +13,11 @@ struct APIError: Error, Decodable {
     let statusCode: Int?
 }
 
-final class NetworkManager {
+final 
+class NetworkManager {
     static let shared = NetworkManager()
     
     private init() {}
-//    
-//    func fetchMovieList() async throws -> [MovieResults] {
-//        let endPoint = API.Endpoints.fetchMovies
-//        let data = try await makeGETRequest(url: endPoint.url)
-//        let changesResponse = try JSONDecoder().decode(MovieResponse.self, from: data)
-//        return changesResponse.results
-//    }
     
     func fetchMovies(from category: MovieCategory) async throws -> [MovieResults] {
         let endPoint: API.Endpoints

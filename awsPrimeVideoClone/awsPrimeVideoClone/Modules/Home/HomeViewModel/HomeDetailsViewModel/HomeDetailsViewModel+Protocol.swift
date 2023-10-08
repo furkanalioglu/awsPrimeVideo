@@ -17,6 +17,11 @@ protocol HomeDetailsViewModelInterface {
 extension HomeDetailsViewModel : HomeDetailsViewModelInterface{
     func viewDidLoad() {
         view?.prepareTableView()
+        Task{
+            if let fetchedId = try await YoutubeManager.shared.fetchTrailer(for: "merhaba") {
+                self.youtubeId = fetchedId.id?.videoId
+            }
+        }
     }
     
     func heightForRow(at indexPath: IndexPath) -> CGFloat{

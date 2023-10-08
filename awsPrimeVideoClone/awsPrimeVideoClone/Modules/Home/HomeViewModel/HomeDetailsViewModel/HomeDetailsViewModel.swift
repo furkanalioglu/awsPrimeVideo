@@ -12,6 +12,7 @@ class HomeDetailsViewModel {
     weak var view : HomeDetailsInterface?
     
     var movie : MovieResults?
+    var youtubeId : String?
     
     lazy var buttonCellNib = UINib(nibName: "HomeDetailsButtonCell", bundle: .main)
     lazy var buttonCellNibName = "HomeDetailsButtonCell"

@@ -18,6 +18,7 @@ extension API {
         case topMovies
         case topSeries
         case turkishMovies
+        case getMovieTrailer(query: String)
 
         var path: String {
             switch self {
@@ -29,6 +30,8 @@ extension API {
                 return "/tv/top_rated"
             case .turkishMovies:
                 return "discover/movie"
+            case .getMovieTrailer(query: _):
+                return ""
             }
         }
 
@@ -44,17 +47,38 @@ extension API {
             case .turkishMovies:
                 return [URLQueryItem(name: "with_original_language", value: "tr"),
                         URLQueryItem(name: "page", value: "1")]
+            case .getMovieTrailer(let query):
+                return [
+                    URLQueryItem(name: "q", value: query),
+                    URLQueryItem(name: "type", value: "video"),
+                    URLQueryItem(name: "key", value: API.youtubeApiKey),
+                    URLQueryItem(name: "part", value: "snippet")
+                ]
             }
         }
 
         var headers: [String: String] {
-            return API.headers
+            switch self {
+            case .getMovieTrailer:
+                return [:]
+            default:
+                return API.headers
+            }
+
         }
         
         var url: URL {
-            var components = URLComponents(url: API.baseURL.appendingPathComponent(path), resolvingAgainstBaseURL: true)!
-            components.queryItems = queryParameters
-            return components.url!
+            switch self {
+            case .getMovieTrailer:
+                var components = URLComponents(url: (API.youtubeApiBaseURL?.appendingPathComponent(path))!, resolvingAgainstBaseURL: true)!
+                components.queryItems = queryParameters
+                return components.url!
+
+            default:
+                var components = URLComponents(url: API.baseURL.appendingPathComponent(path), resolvingAgainstBaseURL: true)!
+                components.queryItems = queryParameters
+                return components.url!
+            }
         }
     }
 }
